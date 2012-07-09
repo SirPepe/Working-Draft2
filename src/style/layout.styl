@@ -1,0 +1,71 @@
+body, html
+  height 100%
+  padding 0 32px
+#Wrapper
+  max-width 1080px
+  margin 0 auto
+  min-height 100%
+  padding-bottom 3em /* Für den Footer */
+
+
+/*
+  Header + Navi
+*/
+#Wrapper > header
+  text-align center
+  clearfix()
+h1
+  float left
+nav
+  float right
+  margin-top 2em
+  li
+    display inline
+    &:not(:first-child)
+      margin-left 4px
+  a
+    text-decoration none !important
+    display inline-block
+    padding 4px 15px
+
+
+/*
+  Content-Boxen
+*/
+.row
+  clearfix()
+  display table
+  width 100%
+  > section
+    display table-cell
+    width 33%
+    &:nth-child(2)
+      width 34%
+
+
+/*
+  Revisionen
+*/
+.revision
+  margin 2em 0
+aside
+  float right
+  width 33%
+  min-width 350px
+  margin-left 1.5 * verticalMargin
+  margin-bottom: 2 * verticalMargin
+  &.meta2
+    width 100%
+    float none
+    margin verticalMargin 0 (2.5 * verticalMargin)
+    padding (verticalMargin / 2) verticalMargin
+
+
+/*
+  Footer
+*/
+p.navigation
+  relative top -1em
+  margin-bottom 1em
+footer
+  margin-top 2em

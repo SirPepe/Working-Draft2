@@ -1,0 +1,57 @@
+body
+  background #FFF url(img/logo-working-draft.png) 0 0 no-repeat fixed
+
+
+/*
+  Header
+*/
+h1
+  font-size 3em
+  line-height 1
+  font-weight bold
+  margin-top 0.8em
+  img
+    vertical-align middle
+    relative top -6px
+    margin 0 8px
+
+
+
+/*
+  Hengstiges Aussehen für die Row- und Info-Boxen
+*/
+.row, aside
+  font-size 0.85em
+  h3
+    font-size 1em
+    text-align center
+    &::after
+      content ""
+      display block
+      height 2px
+      background rgba(textColor, 0.2)
+      margin 0.8em 30%
+
+.row > section, aside
+    background boxBackground
+    color boxTextColor
+    padding 0 verticalMargin
+    transition(opacity 650ms)
+    box-shadow 0.2em 0.2em 1.2em lighten(textColor, 45)
+aside
+  padding 0 verticalMargin
+  &:not(.meta2) p
+    text-align center
+
+
+/*
+  Social-Media-Foo
+*/
+.socialicons
+  text-align center
+  img
+    vertical-align top
+    opacity 0.7
+    transition opacity 400ms
+  img:hover
+    opacity 1

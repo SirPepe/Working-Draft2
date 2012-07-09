@@ -1,0 +1,132 @@
+/*
+  Allgemeine Schriftgrößen und -styles
+*/
+body
+  font-size 1.15em
+  line-height 1.65
+  color textColor
+  font-family Lato, Arial, sans-serif
+
+
+/*
+  Icons
+*/
+@import "lib/iconic_stroke"
+@import "lib/justvectorv2"
+.iconic, .justvector
+  font-weight normal !important
+  margin-right 0.3em
+
+
+/*
+  Icons für die Revisions-Zwischenheadlines
+*/
+.revision > h3:before
+  @extends .iconic
+  margin-right 0.75em
+.revision > h3:nth-last-of-type(3):before
+  @extends .bolt:before
+.revision > h3:nth-last-of-type(2):before
+  @extends .headphones:before
+.revision > h3:nth-last-of-type(1):before
+  @extends .list:before
+
+
+
+/*
+  Links
+*/
+linkBackgroundInactive = transparent
+a
+  font-weight bold
+  border-radius 0.2em
+  padding 1px 2px
+  &:link
+    color linkColor
+    background linkBackgroundInactive
+    text-decoration underline
+  &:visited
+    color visitedColor
+    background linkBackgroundInactive
+    text-decoration underline
+  &:hover
+    color #FFF
+    background linkColor
+    text-decoration none
+  &:active
+    color red
+    background linkBackgroundInactive
+    text-decoration none
+  &:focus
+    color #FFF
+    background red
+    text-decoration none
+
+
+/*
+  Nav
+*/
+nav
+  font-size 1.1em
+  li a
+    &:link, &:visited
+      color linkColor
+      background darken(boxBackground, 4)
+    &:hover, &:active
+      color #FFF
+      background linkColor
+  li.active a
+    &:link, &:visited
+      color textColor
+      background transparent
+    &:hover, &:active
+      color linkColor
+      background transparent
+
+
+
+
+/*
+  (Text-)Headlines
+*/
+h2
+  font-size 1.6em
+  line-height 1.3
+  margin 1.5em 0
+h3
+  font-size 1.2em
+  font-weight bold
+  margin 1.25em 0 0.75em 0
+h4
+  font-weight bold
+  margin 2em 0 0.75em 0
+
+
+/*
+  Textcontainer
+*/
+p, ul, ol, dl
+  margin 1em 0
+dt
+  font-weight bold
+dd
+  padding-left 1.5em
+  margin-bottom 0.25em
+dd + dt
+  margin-top 0.75em
+.revision
+  ul
+    list-style square
+    padding-left 0.5em
+  ol
+    list-style decimal
+    padding-left 0.5em
+
+
+/*
+  Inline-Elemente
+*/
+b, strong
+  font-weight bold
+i, em
+  font-style italic
