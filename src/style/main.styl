@@ -20,8 +20,14 @@ verticalMargin = 32px
 boxBackground  = #FAFAFA
 boxTextColor   = #101010
 defaultBorder  = 1px solid #FFF
+boxshadow = 0.2em 0.2em 1.2em lighten(textColor, 45)
+boxstyle()
+  background boxBackground
+  color boxTextColor
+  padding 0 verticalMargin
+  box-shadow boxshadow
 
 
+@import "design"
 @import "layout"
 @import "typo"
-@import "design"

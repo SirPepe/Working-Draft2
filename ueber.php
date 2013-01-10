@@ -25,7 +25,7 @@
   </dl>
 </aside>
 
-<section>
+<section id="crew">
 
 <p>
   Asdsddsd
@@ -33,47 +33,55 @@
 <h3>Die Crew</h3>
 
 <h4>Peter Kröner</h4>
+<img src="" alt="Foto von " class="crewfoto">
 <p>
-  Asdf
-<ul>
-  <li><a href="http://twitter.com/sir_pepe">@sir_pepe</a>
-</ul>
+  Asdf <a href="http://twitter.com/sir_pepe">@sir_pepe</a>
+
 
 <h4>Christian Schaefer</h4>
+<img src="" alt="Foto von " class="crewfoto">
 <p>
-  Asdf
-<ul>
-  <li><a href="http://twitter.com/derSchepp">@derSchepp</a>
-</ul>
+  Asdf <a href="http://twitter.com/derSchepp">@derSchepp</a>
 
-<h4>Hans Christian Reinl</h4>
+
+<h4 id="hans">Hans Christian Reinl</h4>
+<img src="" alt="Foto von Hans Christian Reinl" class="crewfoto">
 <p>
-  Asdf
-<ul>
-  <li><a href="http://twitter.com/drublic">@drublic</a>
-</ul>
+  Ist freiberuflicher Frontend Entwickler und arbeitet für
+  <a href="http://gebruederheitz.de/">/gebrüderheitz</a> in Freiburg. Ist
+  darüber hinaus Team-Mitglied bei <a href="html5boilerplate.com">HTML5 Boilerplate</a>
+  und in eine Reihe weiterer Open-Source-Projekte verstrickt. Unter dem Codenamen Drublic
+  <a href="http://twitter.com/drublic">twittert</a> und
+  <a href="http://drublic.de/blog">bloggt</a> er über Web-Technologien und seine diversen
+  Projekte.
+
 
 <h4>Kahlil Lechelt</h4>
+<img src="" alt="Foto von " class="crewfoto">
 <p>
-  Asdf
-<ul>
-  <li><a href="http://twitter.com/kahlillechelt">@kahlillechelt</a>
-</ul>
+  Asdf <a href="http://twitter.com/kahlillechelt">@kahlillechelt</a>
 
-<h4>Rodney Rehm</h4>
+
+<h4 id="rod">Rodney Rehm</h4>
+<img src="" alt="Foto von Rodney Rehm" class="crewfoto">
 <p>
-  Asdf
-<ul>
-  <li><a href="http://twitter.com/rodneyrehm">@rodneyrehm</a>
-</ul>
+  Ist als <a href="https://twitter.com/rodneyrehm">@rodneyrehm</a> auf Twitter unterwegs
+  und täuscht seit über 10 Jahren erfolgreich vor, Webentwickler zu sein. Kann seine
+  Einsichten zu PHP, Javascript und jQuery nicht nur in ein Mikrofon sprechen, sondern
+  auch <a href="http://blog.rodneyrehm.de/">schriftlich niederlegen</a>. Ist bekannt und
+  beliebt für seine Arbeit an Open-Source-Projekten wie
+  <a href="http://www.smarty.net/">Smarty</a> und
+  <a href="http://medialize.github.com/URI.js/">URI.js</a>. Weitere Infos auf
+  <a href="http://rodneyrehm.de/">rodneyrehm.de</a>.
+
 
 <h4>Markus Schlegel</h4>
 <p>
-  Alumnus vom Dienst.
-<ul>
-  <li><a href="http://twitter.com/markus_schlegel">@markus_schlegel</a>
-</ul>
+  Emeritierter Gründervater von Working Draft.
+
+
 </section>
+
 
 
 <?php include('footer.html') ?>
